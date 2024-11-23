@@ -1,0 +1,112 @@
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontalScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- 侧滑菜单 -->
+        <LinearLayout
+            android:id="@+id/side_menu"
+            android:layout_width="415dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="133dp"
+                android:layout_height="124dp"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:text="×"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/menu_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单项 1" />
+
+            <Button
+                android:id="@+id/menu_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单项 2" />
+
+            <Button
+                android:id="@+id/menu_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单项 3" />
+
+            <Button
+                android:id="@+id/menu_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单项 4" />
+
+            <Button
+                android:id="@+id/qr_code_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二维码" />
+        </LinearLayout>
+
+        <!-- 主内容 -->
+        <LinearLayout
+            android:layout_width="415dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- 底部按钮 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/bottom_button_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="页面 1" />
+
+                <Button
+                    android:id="@+id/bottom_button_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="页面 2" />
+
+                <Button
+                    android:id="@+id/bottom_button_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="页面 3" />
+
+                <Button
+                    android:id="@+id/bottom_button_4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="页面 4" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>
+
