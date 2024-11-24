@@ -31,7 +31,7 @@
             android:name=".FriendListActivity"
             android:exported="true" />
         <activity android:name=".ChatActivity" />
-
+        <activity android:name=".QRCodeActivity" />
 
     </application>
 
